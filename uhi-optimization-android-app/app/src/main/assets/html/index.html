@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Design </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Easy Prescribe </a>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- About section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="image/profilepic.svg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Mr Raj Verma,</h3>
+        <div class="btns"></div>
+        <p><b>Age:</b> 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Gender:</b> Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>DOB</b>: 31/01/1996</p>
+    </div>
+
+</section>
+
+<!-- About section ends -->
+
+<!-- vitals section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <h3 style="color:rgb(96, 200, 6)">120/80</h3>
+        <p>BP</p>
+    </div>
+
+    <div class="icons">
+        <h3 style="color:rgb(96, 200, 6)">37</h3>
+        <p>Temperature(deg)</p>
+    </div>
+
+    <div class="icons">
+        <h3 style="color:rgb(96, 200, 6)">95</h3>
+        <p>Heartbeat</p>
+    </div>
+
+    <div class="icons">
+        <h3 style="color:crimson">10</h3>
+        <p>Breathing</p>
+    </div>
+
+</section>
+
+<!-- vitals section ends -->
+<!-- Prescribe section starts   -->
+
+<section class="prescribe" id="prescribe">  
+    <div class="row">
+        <form action="#">
+            <h3>Write or Speak</h3>
+            <textarea id="textarea_speak" class="box"></textarea>
+            <div class="btns">
+                <button id= "click-to-speak1" class="btn">
+                    <i class='fas fa-microphone'></i>
+                   </button>
+                   <button id= "click-to-submit" class="btn">
+                    <i class='far fa-paper-plane'></i>
+                   </button>
+            </div>
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Prescribe section ends -->
+<!-- Result section starts  -->
+
+<section class="results" id="results">
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-notes-medical"></i>
+            <h3>Diagnosis</h3>
+           <strong> <p id="diagnosis" style="color: hsl(233, 89%, 60%); font-size:10px"></p></strong>
+        </div>
+        <div class="box">
+            <i class="fas fa-pills"></i>
+            <h3>Medicines</h3>
+            <strong><p id="medicines" style="color: hsl(233, 89%, 60%); font-size:10px"></p></strong>
+        </div>
+    </div>
+
+</section>
+
+<!-- Result section ends -->
+<!-- declaration section starts  -->
+
+<section class="declaration" id="declaration">
+
+    <h1 class="heading"> Signature</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-user"></i> By Dr.Kapoor</a>
+                </div>
+                <h3>I here by declare that</h3>
+                <p><b>Above mentioned details are correct</b></p>
+                <a href="#" class="btn"> submit <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- declaration section ends -->
+<!-- custom js file link  -->
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
