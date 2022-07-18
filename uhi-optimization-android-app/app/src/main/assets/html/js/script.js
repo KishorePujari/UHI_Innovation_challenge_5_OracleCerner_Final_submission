@@ -71,10 +71,16 @@ function convert(text) {
     .then(result => {
       result = JSON.parse(result)
       if (result.Status == "Success") {
-
+        let colCount = 0;
         diagnosed = "<table class=\"table table-bordered table-hover\"><tbody><tr>";
         result.extracted_diseases.map(data => {
+          colCount = colCount + 1;
           diagnosed = diagnosed + "<td>" + data + "</td>";
+          if(colCount >= 3)
+          {
+            diagnosed = diagnosed + "</tr><tr>";
+            colCount = 0;
+          }
         })
         diagnosed = diagnosed + "</tr></tbody></table>";
 
